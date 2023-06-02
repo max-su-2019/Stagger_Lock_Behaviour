@@ -18898,7 +18898,7 @@
             <hkparam name="variableBindingSet">null</hkparam>
             <hkparam name="userData">0</hkparam>
             <hkparam name="name">StaggerBFR</hkparam>
-            <hkparam name="behaviorName">Behaviors\StaggerBehavior.hkx</hkparam>
+            <hkparam name="behaviorName">Behaviors\modernstaggerlock_behavior.hkx</hkparam>
         </hkobject>
         <hkobject name="#0711" class="hkbBlenderGeneratorChild" signature="0xe2b384b0">
             <hkparam name="variableBindingSet">null</hkparam>
