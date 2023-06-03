@@ -1935,7 +1935,7 @@
             <hkparam name="userData">1</hkparam>
             <hkparam name="name">Stagger_MG</hkparam>
             <hkparam name="modifier">#0213</hkparam>
-            <hkparam name="generator">#0216</hkparam>
+            <hkparam name="generator">#0245</hkparam>
         </hkobject>
         <hkobject name="#0213" class="hkbModifierList" signature="0xa4180ca1">
             <hkparam name="variableBindingSet">null</hkparam>
@@ -1970,7 +1970,7 @@
         <hkobject name="#0216" class="hkbStateMachine" signature="0x816c1dcb">
             <hkparam name="variableBindingSet">#0219</hkparam>
             <hkparam name="userData">0</hkparam>
-            <hkparam name="name">Stagger_StateMachine</hkparam>
+            <hkparam name="name">Stagger_StateMachineChild01</hkparam>
             <hkparam name="eventToSendWhenStateOrTransitionChanges">
                 <hkobject>
                     <hkparam name="id">-1</hkparam>
@@ -2064,7 +2064,7 @@
         <hkobject name="#0223" class="hkbStateMachine" signature="0x816c1dcb">
             <hkparam name="variableBindingSet">#0225</hkparam>
             <hkparam name="userData">0</hkparam>
-            <hkparam name="name">staggerForward_StateMachine</hkparam>
+            <hkparam name="name">staggerForward_StateMachine01</hkparam>
             <hkparam name="eventToSendWhenStateOrTransitionChanges">
                 <hkobject>
                     <hkparam name="id">-1</hkparam>
@@ -2088,7 +2088,7 @@
         <hkobject name="#0224" class="hkbStateMachine" signature="0x816c1dcb">
             <hkparam name="variableBindingSet">#0225</hkparam>
             <hkparam name="userData">0</hkparam>
-            <hkparam name="name">staggerBackward_StateMachine</hkparam>
+            <hkparam name="name">staggerBackward_StateMachine01</hkparam>
             <hkparam name="eventToSendWhenStateOrTransitionChanges">
                 <hkobject>
                     <hkparam name="id">-1</hkparam>
@@ -2257,12 +2257,24 @@
             <hkparam name="flags">0</hkparam>
         </hkobject>
         <hkobject name="#0237" class="hkbClipTriggerArray" signature="0x59c23a0f">
-            <hkparam name="triggers" numelements="1">
+            <hkparam name="triggers" numelements="2">
                 <hkobject>
                     <hkparam name="localTime">0.000000</hkparam>
                     <hkparam name="event">
                         <hkobject>
                             <hkparam name="id">0</hkparam>
+                            <hkparam name="payload">null</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="relativeToEndOfClip">true</hkparam>
+                    <hkparam name="acyclic">false</hkparam>
+                    <hkparam name="isAnnotation">false</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="localTime">-0.020000</hkparam>
+                    <hkparam name="event">
+                        <hkobject>
+                            <hkparam name="id">7</hkparam>
                             <hkparam name="payload">null</hkparam>
                         </hkobject>
                     </hkparam>
@@ -2373,6 +2385,510 @@
             <hkparam name="userData">0</hkparam>
             <hkparam name="name">MSL_staggerBackwardLargest</hkparam>
             <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerBackwardLargest.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0245" class="hkbStateMachine" signature="0x816c1dcb">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">Stagger_StateMachineMaster</hkparam>
+            <hkparam name="eventToSendWhenStateOrTransitionChanges">
+                <hkobject>
+                    <hkparam name="id">-1</hkparam>
+                    <hkparam name="payload">null</hkparam>
+                </hkobject>
+            </hkparam>
+            <hkparam name="startStateChooser">null</hkparam>
+            <hkparam name="startStateId">1</hkparam>
+            <hkparam name="returnToPreviousStateEventId">-1</hkparam>
+            <hkparam name="randomTransitionEventId">-1</hkparam>
+            <hkparam name="transitionToNextHigherStateEventId">-1</hkparam>
+            <hkparam name="transitionToNextLowerStateEventId">-1</hkparam>
+            <hkparam name="syncVariableIndex">-1</hkparam>
+            <hkparam name="wrapAroundStateId">false</hkparam>
+            <hkparam name="maxSimultaneousTransitions">32</hkparam>
+            <hkparam name="startStateMode">START_STATE_MODE_DEFAULT</hkparam>
+            <hkparam name="selfTransitionMode">SELF_TRANSITION_MODE_NO_TRANSITION</hkparam>
+            <hkparam name="states" numelements="2">#0246 #0247 </hkparam>
+            <hkparam name="wildcardTransitions">null</hkparam>
+        </hkobject>
+        <hkobject name="#0246" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">#0248</hkparam>
+            <hkparam name="generator">#0216</hkparam>
+            <hkparam name="name">StaggerSubState01</hkparam>
+            <hkparam name="stateId">1</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0247" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">#0250</hkparam>
+            <hkparam name="generator">#0251</hkparam>
+            <hkparam name="name">StaggerSubState02</hkparam>
+            <hkparam name="stateId">2</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0248" class="hkbStateMachineTransitionInfoArray" signature="0xe397b11e">
+            <hkparam name="transitions" numelements="1">
+                <hkobject>
+                    <hkparam name="triggerInterval">
+                        <hkobject>
+                            <hkparam name="enterEventId">-1</hkparam>
+                            <hkparam name="exitEventId">-1</hkparam>
+                            <hkparam name="enterTime">0.000000</hkparam>
+                            <hkparam name="exitTime">0.000000</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="initiateInterval">
+                        <hkobject>
+                            <hkparam name="enterEventId">-1</hkparam>
+                            <hkparam name="exitEventId">-1</hkparam>
+                            <hkparam name="enterTime">0.000000</hkparam>
+                            <hkparam name="exitTime">0.000000</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="transition">#0249</hkparam>
+                    <hkparam name="condition">null</hkparam>
+                    <hkparam name="eventId">3</hkparam>
+                    <hkparam name="toStateId">2</hkparam>
+                    <hkparam name="fromNestedStateId">0</hkparam>
+                    <hkparam name="toNestedStateId">0</hkparam>
+                    <hkparam name="priority">0</hkparam>
+                    <hkparam name="flags">0</hkparam>
+                </hkobject>
+            </hkparam>
+        </hkobject>
+        <hkobject name="#0249" class="hkbBlendingTransitionEffect" signature="0xfd8584fe">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">StaggerBlendTransition</hkparam>
+            <hkparam name="selfTransitionMode">SELF_TRANSITION_MODE_BLEND</hkparam>
+            <hkparam name="eventMode">EVENT_MODE_DEFAULT</hkparam>
+            <hkparam name="duration">0.000000</hkparam>
+            <hkparam name="toGeneratorStartTimeFraction">0.000000</hkparam>
+            <hkparam name="flags">0</hkparam>
+            <hkparam name="endMode">END_MODE_NONE</hkparam>
+            <hkparam name="blendCurve">BLEND_CURVE_SMOOTH</hkparam>
+        </hkobject>
+        <hkobject name="#0250" class="hkbStateMachineTransitionInfoArray" signature="0xe397b11e">
+            <hkparam name="transitions" numelements="1">
+                <hkobject>
+                    <hkparam name="triggerInterval">
+                        <hkobject>
+                            <hkparam name="enterEventId">-1</hkparam>
+                            <hkparam name="exitEventId">-1</hkparam>
+                            <hkparam name="enterTime">0.000000</hkparam>
+                            <hkparam name="exitTime">0.000000</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="initiateInterval">
+                        <hkobject>
+                            <hkparam name="enterEventId">-1</hkparam>
+                            <hkparam name="exitEventId">-1</hkparam>
+                            <hkparam name="enterTime">0.000000</hkparam>
+                            <hkparam name="exitTime">0.000000</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="transition">#0249</hkparam>
+                    <hkparam name="condition">null</hkparam>
+                    <hkparam name="eventId">3</hkparam>
+                    <hkparam name="toStateId">1</hkparam>
+                    <hkparam name="fromNestedStateId">0</hkparam>
+                    <hkparam name="toNestedStateId">0</hkparam>
+                    <hkparam name="priority">0</hkparam>
+                    <hkparam name="flags">0</hkparam>
+                </hkobject>
+            </hkparam>
+        </hkobject>
+        <hkobject name="#0251" class="hkbStateMachine" signature="0x816c1dcb">
+            <hkparam name="variableBindingSet">#0219</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">Stagger_StateMachineChild02</hkparam>
+            <hkparam name="eventToSendWhenStateOrTransitionChanges">
+                <hkobject>
+                    <hkparam name="id">-1</hkparam>
+                    <hkparam name="payload">null</hkparam>
+                </hkobject>
+            </hkparam>
+            <hkparam name="startStateChooser">null</hkparam>
+            <hkparam name="startStateId">0</hkparam>
+            <hkparam name="returnToPreviousStateEventId">-1</hkparam>
+            <hkparam name="randomTransitionEventId">-1</hkparam>
+            <hkparam name="transitionToNextHigherStateEventId">-1</hkparam>
+            <hkparam name="transitionToNextLowerStateEventId">-1</hkparam>
+            <hkparam name="syncVariableIndex">-1</hkparam>
+            <hkparam name="wrapAroundStateId">false</hkparam>
+            <hkparam name="maxSimultaneousTransitions">32</hkparam>
+            <hkparam name="startStateMode">START_STATE_MODE_DEFAULT</hkparam>
+            <hkparam name="selfTransitionMode">SELF_TRANSITION_MODE_NO_TRANSITION</hkparam>
+            <hkparam name="states" numelements="4">#0252 #0253 #0254 #0255 </hkparam>
+            <hkparam name="wildcardTransitions">null</hkparam>
+        </hkobject>
+        <hkobject name="#0252" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0256</hkparam>
+            <hkparam name="name">StaggerRightBackward_State</hkparam>
+            <hkparam name="stateId">0</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0253" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0267</hkparam>
+            <hkparam name="name">StaggerRightForward_State</hkparam>
+            <hkparam name="stateId">1</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0254" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0267</hkparam>
+            <hkparam name="name">staggerLeftForward_State</hkparam>
+            <hkparam name="stateId">2</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0255" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0256</hkparam>
+            <hkparam name="name">StaggerLeftBackward_State</hkparam>
+            <hkparam name="stateId">3</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0256" class="hkbStateMachine" signature="0x816c1dcb">
+            <hkparam name="variableBindingSet">#0225</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">staggerBackward_StateMachine02</hkparam>
+            <hkparam name="eventToSendWhenStateOrTransitionChanges">
+                <hkobject>
+                    <hkparam name="id">-1</hkparam>
+                    <hkparam name="payload">null</hkparam>
+                </hkobject>
+            </hkparam>
+            <hkparam name="startStateChooser">null</hkparam>
+            <hkparam name="startStateId">0</hkparam>
+            <hkparam name="returnToPreviousStateEventId">-1</hkparam>
+            <hkparam name="randomTransitionEventId">-1</hkparam>
+            <hkparam name="transitionToNextHigherStateEventId">-1</hkparam>
+            <hkparam name="transitionToNextLowerStateEventId">-1</hkparam>
+            <hkparam name="syncVariableIndex">-1</hkparam>
+            <hkparam name="wrapAroundStateId">false</hkparam>
+            <hkparam name="maxSimultaneousTransitions">32</hkparam>
+            <hkparam name="startStateMode">START_STATE_MODE_DEFAULT</hkparam>
+            <hkparam name="selfTransitionMode">SELF_TRANSITION_MODE_NO_TRANSITION</hkparam>
+            <hkparam name="states" numelements="5">#0257 #0258 #0259 #0260 #0261 </hkparam>
+            <hkparam name="wildcardTransitions">null</hkparam>
+        </hkobject>
+        <hkobject name="#0257" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0262</hkparam>
+            <hkparam name="name">staggerBackwardSmallest_State</hkparam>
+            <hkparam name="stateId">0</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0258" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0263</hkparam>
+            <hkparam name="name">staggerBackwardSmall_State</hkparam>
+            <hkparam name="stateId">1</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0259" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0264</hkparam>
+            <hkparam name="name">staggerBackwardMedium_State</hkparam>
+            <hkparam name="stateId">2</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0260" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0265</hkparam>
+            <hkparam name="name">staggerBackwardLarge_State</hkparam>
+            <hkparam name="stateId">3</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0261" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0266</hkparam>
+            <hkparam name="name">staggerBackwardLargest_State</hkparam>
+            <hkparam name="stateId">4</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0262" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerBackwardSmall</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerBackwardSmall.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0263" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerBackwardSmall</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerBackwardSmall.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0264" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerBackwardMedium</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerBackwardMedium.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0265" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerBackwardLarge</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerBackwardLarge.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0266" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerBackwardLargest</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerBackwardLargest.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0267" class="hkbStateMachine" signature="0x816c1dcb">
+            <hkparam name="variableBindingSet">#0225</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">staggerForward_StateMachine02</hkparam>
+            <hkparam name="eventToSendWhenStateOrTransitionChanges">
+                <hkobject>
+                    <hkparam name="id">-1</hkparam>
+                    <hkparam name="payload">null</hkparam>
+                </hkobject>
+            </hkparam>
+            <hkparam name="startStateChooser">null</hkparam>
+            <hkparam name="startStateId">0</hkparam>
+            <hkparam name="returnToPreviousStateEventId">-1</hkparam>
+            <hkparam name="randomTransitionEventId">-1</hkparam>
+            <hkparam name="transitionToNextHigherStateEventId">-1</hkparam>
+            <hkparam name="transitionToNextLowerStateEventId">-1</hkparam>
+            <hkparam name="syncVariableIndex">-1</hkparam>
+            <hkparam name="wrapAroundStateId">false</hkparam>
+            <hkparam name="maxSimultaneousTransitions">32</hkparam>
+            <hkparam name="startStateMode">START_STATE_MODE_DEFAULT</hkparam>
+            <hkparam name="selfTransitionMode">SELF_TRANSITION_MODE_NO_TRANSITION</hkparam>
+            <hkparam name="states" numelements="5">#0268 #0269 #0270 #0271 #0272 </hkparam>
+            <hkparam name="wildcardTransitions">null</hkparam>
+        </hkobject>
+        <hkobject name="#0268" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0273</hkparam>
+            <hkparam name="name">staggerForwardSmallest_State</hkparam>
+            <hkparam name="stateId">0</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0269" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0273</hkparam>
+            <hkparam name="name">staggerForwardSmall_State</hkparam>
+            <hkparam name="stateId">1</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0270" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0274</hkparam>
+            <hkparam name="name">staggerForwardMedium_State</hkparam>
+            <hkparam name="stateId">2</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0271" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0275</hkparam>
+            <hkparam name="name">staggerForwardLarge_State</hkparam>
+            <hkparam name="stateId">3</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0272" class="hkbStateMachineStateInfo" signature="0xed7f9d0">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="listeners" numelements="0" />
+            <hkparam name="enterNotifyEvents">null</hkparam>
+            <hkparam name="exitNotifyEvents">null</hkparam>
+            <hkparam name="transitions">null</hkparam>
+            <hkparam name="generator">#0276</hkparam>
+            <hkparam name="name">staggerForwardLargest_State</hkparam>
+            <hkparam name="stateId">4</hkparam>
+            <hkparam name="probability">1.000000</hkparam>
+            <hkparam name="enable">true</hkparam>
+        </hkobject>
+        <hkobject name="#0273" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerForwardSmall</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerForwardSmall.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0274" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerForwardMedium</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerForwardMedium.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0275" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerForwardLarge</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerForwardLarge.hkx</hkparam>
+            <hkparam name="triggers">#0237</hkparam>
+            <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
+            <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
+            <hkparam name="startTime">0.000000</hkparam>
+            <hkparam name="playbackSpeed">1.000000</hkparam>
+            <hkparam name="enforcedDuration">0.000000</hkparam>
+            <hkparam name="userControlledTimeFraction">0.000000</hkparam>
+            <hkparam name="animationBindingIndex">-1</hkparam>
+            <hkparam name="mode">MODE_SINGLE_PLAY</hkparam>
+            <hkparam name="flags">0</hkparam>
+        </hkobject>
+        <hkobject name="#0276" class="hkbClipGenerator" signature="0x333b85b9">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">MSL_staggerForwardLargest</hkparam>
+            <hkparam name="animationName">Animations\modernstaggerlock\MSL_staggerForwardLargest.hkx</hkparam>
             <hkparam name="triggers">#0237</hkparam>
             <hkparam name="cropStartAmountLocalTime">0.000000</hkparam>
             <hkparam name="cropEndAmountLocalTime">0.000000</hkparam>
