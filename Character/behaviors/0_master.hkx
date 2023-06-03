@@ -49348,7 +49348,7 @@
             <hkparam name="enterNotifyEvents">null</hkparam>
             <hkparam name="exitNotifyEvents">null</hkparam>
             <hkparam name="transitions">#2523</hkparam>
-            <hkparam name="generator">#2366</hkparam>
+            <hkparam name="generator">#2524</hkparam>
             <hkparam name="name">StaggerState2</hkparam>
             <hkparam name="stateId">2</hkparam>
             <hkparam name="probability">1.000000</hkparam>
@@ -49425,6 +49425,19 @@
                     <hkparam name="flags">0</hkparam>
                 </hkobject>
             </hkparam>
+        </hkobject>
+        <hkobject name="#2524" class="hkbModifierGenerator" signature="0x1f81fae6">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">1</hkparam>
+            <hkparam name="name">ModifierGenerator02</hkparam>
+            <hkparam name="modifier">#2367</hkparam>
+            <hkparam name="generator">#2525</hkparam>
+        </hkobject>
+        <hkobject name="#2525" class="hkbBehaviorReferenceGenerator" signature="0xfcb5423">
+            <hkparam name="variableBindingSet">null</hkparam>
+            <hkparam name="userData">0</hkparam>
+            <hkparam name="name">StaggerBFR2</hkparam>
+            <hkparam name="behaviorName">Behaviors\modernstaggerlock_behavior2.hkx</hkparam>
         </hkobject>
     </hksection>
 </hkpackfile>
