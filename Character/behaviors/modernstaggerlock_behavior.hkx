@@ -2017,7 +2017,7 @@
             <hkparam name="listeners" numelements="0" />
             <hkparam name="enterNotifyEvents">null</hkparam>
             <hkparam name="exitNotifyEvents">null</hkparam>
-            <hkparam name="transitions">null</hkparam>
+            <hkparam name="transitions">#0242</hkparam>
             <hkparam name="generator">#0227</hkparam>
             <hkparam name="name">MediumStaggerState</hkparam>
             <hkparam name="stateId">2</hkparam>
@@ -2029,7 +2029,7 @@
             <hkparam name="listeners" numelements="0" />
             <hkparam name="enterNotifyEvents">null</hkparam>
             <hkparam name="exitNotifyEvents">null</hkparam>
-            <hkparam name="transitions">null</hkparam>
+            <hkparam name="transitions">#0242</hkparam>
             <hkparam name="generator">#0232</hkparam>
             <hkparam name="name">LargeStaggerState</hkparam>
             <hkparam name="stateId">3</hkparam>
@@ -2041,7 +2041,7 @@
             <hkparam name="listeners" numelements="0" />
             <hkparam name="enterNotifyEvents">null</hkparam>
             <hkparam name="exitNotifyEvents">null</hkparam>
-            <hkparam name="transitions">null</hkparam>
+            <hkparam name="transitions">#0242</hkparam>
             <hkparam name="generator">#0237</hkparam>
             <hkparam name="name">LargestStaggerState</hkparam>
             <hkparam name="stateId">4</hkparam>
