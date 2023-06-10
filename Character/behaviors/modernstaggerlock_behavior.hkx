@@ -2,7 +2,7 @@
 <hkpackfile classversion="8" contentsversion="hk_2010.2.0-r1" toplevelobject="#0100">
     <hksection name="__data__">
         <hkobject name="#0101" class="hkbBehaviorGraphStringData" signature="0xc713064e">
-            <hkparam name="eventNames" numelements="20">
+            <hkparam name="eventNames" numelements="24">
                 <hkcstring>staggerStop</hkcstring>
                 <hkcstring>FootScuffLeft</hkcstring>
                 <hkcstring>FootScuffRight</hkcstring>
@@ -12,17 +12,21 @@
                 <hkcstring>HeadTrackingOn</hkcstring>
                 <hkcstring>InitiateWinBegin</hkcstring>
                 <hkcstring>InitiateWinEnd</hkcstring>
-                <hkcstring>MSL_SmallStaggerWinOpen</hkcstring>
+                <hkcstring>MSL_SmallStaggerTriggerOpen</hkcstring>
                 <hkcstring>MSL_SmallStaggerWinClose</hkcstring>
-                <hkcstring>MSL_MediumStaggerWinOpen</hkcstring>
+                <hkcstring>MSL_MediumStaggerTriggerOpen</hkcstring>
                 <hkcstring>MSL_MediumStaggerWinClose</hkcstring>
-                <hkcstring>MSL_LargeStaggerWinOpen</hkcstring>
+                <hkcstring>MSL_LargeStaggerTriggerOpen</hkcstring>
                 <hkcstring>MSL_LargeStaggerWinClose</hkcstring>
-                <hkcstring>MSL_LargestStaggerWinOpen</hkcstring>
+                <hkcstring>MSL_LargestStaggerTriggerOpen</hkcstring>
                 <hkcstring>MSL_LargestStaggerWinClose</hkcstring>
                 <hkcstring>SoundPlay</hkcstring>
                 <hkcstring>MSL_RecovWinOpen</hkcstring>
                 <hkcstring>MSL_RecovWinClose</hkcstring>
+                <hkcstring>MSL_SmallStaggerInitiateOpen</hkcstring>
+                <hkcstring>MSL_MediumStaggerInitiateOpen</hkcstring>
+                <hkcstring>MSL_LargeStaggerInitiateOpen</hkcstring>
+                <hkcstring>MSL_LargestStaggerInitiateOpen</hkcstring>
             </hkparam>
             <hkparam name="attributeNames" numelements="0" />
             <hkparam name="variableNames" numelements="12">
@@ -196,7 +200,7 @@
                 </hkobject>
             </hkparam>
             <hkparam name="characterPropertyInfos" numelements="0" />
-            <hkparam name="eventInfos" numelements="20">
+            <hkparam name="eventInfos" numelements="24">
                 <hkobject>
                     <hkparam name="flags">FLAG_SYNC_POINT</hkparam>
                 </hkobject>
@@ -220,6 +224,18 @@
                 </hkobject>
                 <hkobject>
                     <hkparam name="flags">FLAG_SYNC_POINT</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="flags">0</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="flags">0</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="flags">0</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="flags">0</hkparam>
                 </hkobject>
                 <hkobject>
                     <hkparam name="flags">0</hkparam>
@@ -3128,7 +3144,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">9</hkparam>
+                            <hkparam name="enterEventId">20</hkparam>
                             <hkparam name="exitEventId">10</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
@@ -3154,7 +3170,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">9</hkparam>
+                            <hkparam name="enterEventId">20</hkparam>
                             <hkparam name="exitEventId">10</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
@@ -3180,7 +3196,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">11</hkparam>
+                            <hkparam name="enterEventId">21</hkparam>
                             <hkparam name="exitEventId">12</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
@@ -3206,7 +3222,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">11</hkparam>
+                            <hkparam name="enterEventId">21</hkparam>
                             <hkparam name="exitEventId">12</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
@@ -3232,7 +3248,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">13</hkparam>
+                            <hkparam name="enterEventId">22</hkparam>
                             <hkparam name="exitEventId">14</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
@@ -3258,7 +3274,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">13</hkparam>
+                            <hkparam name="enterEventId">22</hkparam>
                             <hkparam name="exitEventId">14</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
@@ -3284,7 +3300,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">15</hkparam>
+                            <hkparam name="enterEventId">23</hkparam>
                             <hkparam name="exitEventId">16</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
@@ -3310,7 +3326,7 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">15</hkparam>
+                            <hkparam name="enterEventId">23</hkparam>
                             <hkparam name="exitEventId">16</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
