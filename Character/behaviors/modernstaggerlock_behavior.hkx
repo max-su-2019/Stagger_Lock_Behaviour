@@ -2,7 +2,7 @@
 <hkpackfile classversion="8" contentsversion="hk_2010.2.0-r1" toplevelobject="#0100">
     <hksection name="__data__">
         <hkobject name="#0101" class="hkbBehaviorGraphStringData" signature="0xc713064e">
-            <hkparam name="eventNames" numelements="31">
+            <hkparam name="eventNames" numelements="32">
                 <hkcstring>staggerStop</hkcstring>
                 <hkcstring>FootScuffLeft</hkcstring>
                 <hkcstring>FootScuffRight</hkcstring>
@@ -33,7 +33,8 @@
                 <hkcstring>MSL_LagrestStaggerStart</hkcstring>
                 <hkcstring>MSL_SpecialStaggerStart</hkcstring>
                 <hkcstring>MSL_SpeicalStaggerTriggerOpen</hkcstring>
-                <hkcstring>MSL_SpeicalStaggerTriggerClose</hkcstring>
+                <hkcstring>MSL_SpeicalStaggerWinClose</hkcstring>
+                <hkcstring>MSL_SpeicalStaggerInitiateOpen</hkcstring>
             </hkparam>
             <hkparam name="attributeNames" numelements="0" />
             <hkparam name="variableNames" numelements="13">
@@ -220,7 +221,7 @@
                 </hkobject>
             </hkparam>
             <hkparam name="characterPropertyInfos" numelements="0" />
-            <hkparam name="eventInfos" numelements="31">
+            <hkparam name="eventInfos" numelements="32">
                 <hkobject>
                     <hkparam name="flags">FLAG_SYNC_POINT</hkparam>
                 </hkobject>
@@ -244,6 +245,9 @@
                 </hkobject>
                 <hkobject>
                     <hkparam name="flags">FLAG_SYNC_POINT</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="flags">0</hkparam>
                 </hkobject>
                 <hkobject>
                     <hkparam name="flags">0</hkparam>
@@ -3162,8 +3166,8 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">-1</hkparam>
-                            <hkparam name="exitEventId">-1</hkparam>
+                            <hkparam name="enterEventId">31</hkparam>
+                            <hkparam name="exitEventId">30</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
                         </hkobject>
@@ -3174,8 +3178,8 @@
                     <hkparam name="toStateId">5</hkparam>
                     <hkparam name="fromNestedStateId">0</hkparam>
                     <hkparam name="toNestedStateId">0</hkparam>
-                    <hkparam name="priority">3</hkparam>
-                    <hkparam name="flags">FLAG_USE_TRIGGER_INTERVAL|FLAG_TO_NESTED_STATE_ID_IS_VALID</hkparam>
+                    <hkparam name="priority">0</hkparam>
+                    <hkparam name="flags">FLAG_USE_TRIGGER_INTERVAL|FLAG_USE_INITIATE_INTERVAL|FLAG_TO_NESTED_STATE_ID_IS_VALID</hkparam>
                 </hkobject>
                 <hkobject>
                     <hkparam name="triggerInterval">
@@ -3188,8 +3192,8 @@
                     </hkparam>
                     <hkparam name="initiateInterval">
                         <hkobject>
-                            <hkparam name="enterEventId">-1</hkparam>
-                            <hkparam name="exitEventId">-1</hkparam>
+                            <hkparam name="enterEventId">31</hkparam>
+                            <hkparam name="exitEventId">30</hkparam>
                             <hkparam name="enterTime">0.000000</hkparam>
                             <hkparam name="exitTime">0.000000</hkparam>
                         </hkobject>
@@ -3200,8 +3204,8 @@
                     <hkparam name="toStateId">5</hkparam>
                     <hkparam name="fromNestedStateId">0</hkparam>
                     <hkparam name="toNestedStateId">1</hkparam>
-                    <hkparam name="priority">3</hkparam>
-                    <hkparam name="flags">FLAG_USE_TRIGGER_INTERVAL|FLAG_TO_NESTED_STATE_ID_IS_VALID</hkparam>
+                    <hkparam name="priority">0</hkparam>
+                    <hkparam name="flags">FLAG_USE_TRIGGER_INTERVAL|FLAG_USE_INITIATE_INTERVAL|FLAG_TO_NESTED_STATE_ID_IS_VALID</hkparam>
                 </hkobject>
             </hkparam>
         </hkobject>
