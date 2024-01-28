@@ -37,7 +37,7 @@
                 <hkcstring>MSL_SpeicalStaggerInitiateOpen</hkcstring>
             </hkparam>
             <hkparam name="attributeNames" numelements="0" />
-            <hkparam name="variableNames" numelements="13">
+            <hkparam name="variableNames" numelements="18">
                 <hkcstring>staggerMagnitude</hkcstring>
                 <hkcstring>IsStaggering</hkcstring>
                 <hkcstring>iRightHandType</hkcstring>
@@ -49,13 +49,18 @@
                 <hkcstring>IsPlayer</hkcstring>
                 <hkcstring>msl_staggerLevel</hkcstring>
                 <hkcstring>msl_staggerDirection</hkcstring>
-                <hkcstring>MSL_IsStaggerRecovery</hkcstring>
+                <hkcstring>msl_IsStaggerRecovery</hkcstring>
                 <hkcstring>msl_SpecialStaggerID</hkcstring>
+                <hkcstring>msl_SmallStaggerCounter</hkcstring>
+                <hkcstring>msl_MediumStaggerCounter</hkcstring>
+                <hkcstring>msl_LargeStaggerCounter</hkcstring>
+                <hkcstring>msl_LargestStaggerCounter</hkcstring>
+                <hkcstring>msl_SpeicalStaggerCounter</hkcstring>
             </hkparam>
             <hkparam name="characterPropertyNames" numelements="0" />
         </hkobject>
         <hkobject name="#0102" class="hkbVariableValueSet" signature="0x27812d8d">
-            <hkparam name="wordVariableValues" numelements="13">
+            <hkparam name="wordVariableValues" numelements="18">
                 <hkobject>
                     <hkparam name="value">0</hkparam>
                 </hkobject>
@@ -95,13 +100,28 @@
                 <hkobject>
                     <hkparam name="value">0</hkparam>
                 </hkobject>
+                <hkobject>
+                    <hkparam name="value">0</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="value">0</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="value">0</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="value">0</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="value">0</hkparam>
+                </hkobject>
             </hkparam>
             <hkparam name="quadVariableValues" numelements="0" />
             <hkparam name="variantVariableValues" numelements="0" />
         </hkobject>
         <hkobject name="#0103" class="hkbBehaviorGraphData" signature="0x95aca5d">
             <hkparam name="attributeDefaults" numelements="0" />
-            <hkparam name="variableInfos" numelements="13">
+            <hkparam name="variableInfos" numelements="18">
                 <hkobject>
                     <hkparam name="role">
                         <hkobject>
@@ -209,6 +229,51 @@
                         </hkobject>
                     </hkparam>
                     <hkparam name="type">VARIABLE_TYPE_BOOL</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="role">
+                        <hkobject>
+                            <hkparam name="role">ROLE_DEFAULT</hkparam>
+                            <hkparam name="flags">0</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="type">VARIABLE_TYPE_INT32</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="role">
+                        <hkobject>
+                            <hkparam name="role">ROLE_DEFAULT</hkparam>
+                            <hkparam name="flags">0</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="type">VARIABLE_TYPE_INT32</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="role">
+                        <hkobject>
+                            <hkparam name="role">ROLE_DEFAULT</hkparam>
+                            <hkparam name="flags">0</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="type">VARIABLE_TYPE_INT32</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="role">
+                        <hkobject>
+                            <hkparam name="role">ROLE_DEFAULT</hkparam>
+                            <hkparam name="flags">0</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="type">VARIABLE_TYPE_INT32</hkparam>
+                </hkobject>
+                <hkobject>
+                    <hkparam name="role">
+                        <hkobject>
+                            <hkparam name="role">ROLE_DEFAULT</hkparam>
+                            <hkparam name="flags">0</hkparam>
+                        </hkobject>
+                    </hkparam>
+                    <hkparam name="type">VARIABLE_TYPE_INT32</hkparam>
                 </hkobject>
                 <hkobject>
                     <hkparam name="role">
