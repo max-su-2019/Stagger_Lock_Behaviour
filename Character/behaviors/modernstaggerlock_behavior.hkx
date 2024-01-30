@@ -29,12 +29,12 @@
                 <hkcstring>MSL_LargestStaggerInitiateOpen</hkcstring>
                 <hkcstring>MSL_SmallStaggerStart</hkcstring>
                 <hkcstring>MSL_MediumStaggerStart</hkcstring>
-                <hkcstring>MSL_LagreStaggerStart</hkcstring>
-                <hkcstring>MSL_LagrestStaggerStart</hkcstring>
+                <hkcstring>MSL_LargeStaggerStart</hkcstring>
+                <hkcstring>MSL_LargestStaggerStart</hkcstring>
                 <hkcstring>MSL_SpecialStaggerStart</hkcstring>
-                <hkcstring>MSL_SpeicalStaggerTriggerOpen</hkcstring>
-                <hkcstring>MSL_SpeicalStaggerWinClose</hkcstring>
-                <hkcstring>MSL_SpeicalStaggerInitiateOpen</hkcstring>
+                <hkcstring>MSL_SpecialStaggerTriggerOpen</hkcstring>
+                <hkcstring>MSL_SpecialStaggerWinClose</hkcstring>
+                <hkcstring>MSL_SpecialStaggerInitiateOpen</hkcstring>
             </hkparam>
             <hkparam name="attributeNames" numelements="0" />
             <hkparam name="variableNames" numelements="18">
@@ -55,7 +55,7 @@
                 <hkcstring>msl_MediumStaggerCounter</hkcstring>
                 <hkcstring>msl_LargeStaggerCounter</hkcstring>
                 <hkcstring>msl_LargestStaggerCounter</hkcstring>
-                <hkcstring>msl_SpeicalStaggerCounter</hkcstring>
+                <hkcstring>msl_SpecialStaggerCounter</hkcstring>
             </hkparam>
             <hkparam name="characterPropertyNames" numelements="0" />
         </hkobject>
