@@ -23,7 +23,7 @@
 			<!-- referenceCount SERIALIZE_IGNORED -->
 			<hkparam name="deformableSkinNames" numelements="0"></hkparam>
 			<hkparam name="rigidSkinNames" numelements="0"></hkparam>
-			<hkparam name="animationNames" numelements="1666">
+			<hkparam name="animationNames" numelements="1668">
 				<hkcstring>Animations\1HM_1stP_Run.hkx</hkcstring>
 				<hkcstring>Animations\1hm_1stP_Walk.hkx</hkcstring>
 				<hkcstring>Animations\1HM_AttackForwardSprint.hkx</hkcstring>
@@ -1690,6 +1690,8 @@
 				<hkcstring>Animations\modernstaggerlock\MSL_staggerBackwardLargest.hkx</hkcstring>
 				<hkcstring>Animations\modernstaggerlock\MSL_staggerBackwardSpecial.hkx</hkcstring>
 				<hkcstring>Animations\modernstaggerlock\MSL_staggerForwardSpecial.hkx</hkcstring>
+				<hkcstring>Animations\modernstaggerlock\MSL_specialStaggerFall.hkx</hkcstring>
+				<hkcstring>Animations\modernstaggerlock\MSL_specialStaggerLand.hkx</hkcstring>
 			</hkparam>
 			<hkparam name="animationFilenames" numelements="0"></hkparam>
 			<hkparam name="characterPropertyNames" numelements="39">
